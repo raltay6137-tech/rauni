@@ -189,4 +189,318 @@
             padding: 15px;
         }
 
-        .card-
+        .card-date {
+            font-size: 11px;
+            color: #999;
+            margin-bottom: 5px;
+        }
+
+        .card-body h3 {
+            font-size: 15px;
+            color: #162e5c;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        /* Duyurular Listesi (Sağ Blok) */
+        .announcements-list {
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .announcement-item {
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .announcement-item:last-child {
+            border-bottom: none;
+        }
+
+        .announcement-item .date {
+            font-size: 12px;
+            color: #d3a247;
+            font-weight: bold;
+        }
+
+        .announcement-item a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .announcement-item a:hover {
+            color: #162e5c;
+        }
+
+        /* Hızlı Erişim Butonları */
+        .quick-links {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .quick-btn {
+            background-color: #0f2042;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .quick-btn:hover {
+            background-color: #d3a247;
+            color: #0f2042;
+        }
+
+        /* Alt Bilgi (Footer) */
+        footer {
+            background-color: #0f2042;
+            color: #fff;
+            padding: 40px 5% 20px 5%;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            border-bottom: 1px solid #223a66;
+            padding-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: #d3a247;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Responsive Uyum */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .grid-news {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .nav-container a {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div>E-Posta: info@receptalay.edu.tr | Tel: +90 366 000 00 00</div>
+        <div>
+            <a href="#">ÖBS</a>
+            <a href="#">E-Kampüs</a>
+            <a href="#">Kütüphane</a>
+            <a href="#">English</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-area">
+            <div class="logo-placeholder">RAÜ</div>
+            <div class="logo-text">
+                <h1>Recep Altay Üniversitesi</h1>
+                <p>Aydınlık Geleceğe Doğru...</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-container">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Üniversitemiz</a></li>
+            <li><a href="#">Akademik</a></li>
+            <li><a href="#">İdari</a></li>
+            <li><a href="#">Öğrenci</a></li>
+            <li><a href="#">Araştırma</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-slider">
+        <img src="https://picsum.photos/id/122/1600/450" alt="RAÜ Kampüs">
+        <div class="slider-caption">
+            <h2>2026-2027 Akademik Yılı Kayıtları Başladı</h2>
+            <p>Geleceğinizi şekillendirecek akademik kadromuz ve modern kampüs olanaklarımızla sizleri bekliyoruz.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <main>
+            <div class="section-title">
+                <span>Haberler</span>
+            </div>
+            <div class="grid-news">
+                
+                <div class="card">
+                    <img src="https://picsum.photos/id/364/400/250" alt="Haber 1">
+                    <div class="card-body">
+                        <div class="card-date">01 Haziran 2026</div>
+                        <h3>Teknoloji Geliştirme Merkezimizin Temeli Atıldı</h3>
+                        <p>Bölgemizin inovasyon üssü olacak yeni merkezimizin inşaat süreci resmi törenle başladı.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://picsum.photos/id/445/400/250" alt="Haber 2">
+                    <div class="card-body">
+                        <div class="card-date">28 Mayıs 2026</div>
+                        <h3>Uluslararası Sempozyum Başarıyla Tamamlandı</h3>
+                        <p>Bu yıl 5.'si düzenlenen Sürdürülebilir Kalkınma Kongresi'ne 20 ülkeden akademisyen katıldı.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://picsum.photos/id/64/400/250" alt="Haber 3">
+                    <div class="card-body">
+                        <div class="card-date">22 Mayıs 2026</div>
+                        <h3>Öğrencilerimizin Büyük TÜBİTAK Başarısı</h3>
+                        <p>Mühendislik Fakültesi öğrencilerimiz hazırladıkları proje ile birincilik ödülüne layık görüldü.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://picsum.photos/id/180/400/250" alt="Haber 4">
+                    <div class="card-body">
+                        <div class="card-date">15 Mayıs 2026</div>
+                        <h3>Bahar Şenlikleri Coşkuyla Kutlandı</h3>
+                        <p>Kampüsümüzde gerçekleştirilen konserler, spor müsabakaları ve etkinlikler renkli görüntülere sahne oldu.</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="section-title">
+                <span>Duyurular</span>
+            </div>
+            <div class="announcements-list">
+                
+                <div class="announcement-item">
+                    <span class="date">01.06.2026</span>
+                    <a href="#">Yaz Okulu Kayıt İşlemleri ve Ders Seçimleri Hakkında</a>
+                </div>
+
+                <div class="announcement-item">
+                    <span class="date">29.05.2026</span>
+                    <a href="#">Pedagojik Formasyon Eğitimi Muafiyet Sonuçları</a>
+                </div>
+
+                <div class="announcement-item">
+                    <span class="date">25.05.2026</span>
+                    <a href="#">Erasmus+ Yabancı Dil Sözlü Sınav Yeri ve Saatleri</a>
+                </div>
+
+                <div class="announcement-item">
+                    <span class="date">18.05.2026</span>
+                    <a href="#">Lisansüstü Programlar İkinci Öğretim Harç Ödemeleri</a>
+                </div>
+
+                <div class="announcement-item">
+                    <span class="date">10.05.2026</span>
+                    <a href="#">Kısmi Zamanlı Öğrenci İstihdam Başvuru Değerlendirmesi</a>
+                </div>
+
+            </div>
+        </aside>
+
+        <div class="quick-links">
+            <a href="#" class="quick-btn">Akademik Takvim</a>
+            <a href="#" class="quick-btn">Yemek Listesi</a>
+            <a href="#" class="quick-btn">Öğrenci Toplulukları</a>
+            <a href="#" class="quick-btn">Mevzuat / Yönetmelik</a>
+            <a href="#" class="quick-btn">Kalite Yönetimi</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>İletişim Bilgileri</h4>
+                <p>Recep Altay Üniversitesi Rektörlüğü</p>
+                <p>Merkez Kampüs, 37100 Merkez</p>
+                <br>
+                <p>E-posta: info@receptalay.edu.tr</p>
+                <p>Kep: receptalay@hs01.kep.tr</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="#">Bilgi Edinme</a></li>
+                    <li><a href="#">YÖK Resmi Sitesi</a></li>
+                    <li><a href="#">ÖSYM Başkanlığı</a></li>
+                    <li><a href="#">CİMER Başvuru</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Yerleşkeler</h4>
+                <ul>
+                    <li><a href="#">Merkez Kampüsü</a></li>
+                    <li><a href="#">Kuzey Teknoloji Yerleşkesi</a></li>
+                    <li><a href="#">Sağlık Bilimleri Kompleksi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Recep Altay Üniversitesi Bilgi İşlem Daire Başkanlığı. Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+</body>
+</html>
